@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Listado de productos</title>
+	<link rel="stylesheet" href="public/css/estyles.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+	<h1>Conoce todos nuestros Productos</h1>
+	<hr>
+
+	<div>
+		<ul>
+			<% for( let i = 0; i < products.length; i++ ) { %>
+				<h2><%= products[i].name %></h2>
+			    <li>Nombre del producto: <%= products[i].name %></li>
+				<li>Precio: <%= products[i].price %></li>
+			    <li>Descripción: <%= products[i].description %></li>
+				<li>Marca: <%= products[i].brand %></li>	
+				<img src="<%= products[i].images.includes('http') ? products[i].images :  '/images/'+ products[i].images %>" width='200px'>
+				<br>
+				<a type="button" class="btn btn-success" href="/products/detail/<%=products[i]._id%>">Ver detalle</a>
+					
+		
+					<% } %>
+			</ul>
+	</div>
+</body>
+<%- include('./partials/footer'); -%>
+</html>
