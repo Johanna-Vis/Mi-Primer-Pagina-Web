@@ -1,3 +1,3 @@
 # Mi-Primer-Pagina-Web
 Esto es mi primer Página Web, con Html, Css y JavaScript. 
-Pagina  con html, Css y JavaScript, ejecutando lo aprendido en la carrera. Es una pagina donde mostramos productos,  los ejecutamon con el patorn MVC, y lo conetamos a una base de datos. 
+Ejecutamos lo aprendido en el curso, haciendo una página de productos, con el patrón MVC, conectada a una Base de Datos, para poder seguir subiendo archivos, que puede ir creciendo.  La idea era hacer una página similar a Mercado Libre (Super Trainne).
